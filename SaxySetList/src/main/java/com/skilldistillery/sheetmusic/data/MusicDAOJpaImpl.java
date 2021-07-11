@@ -32,9 +32,9 @@ public class MusicDAOJpaImpl implements MusicDAO{
 		Music dbMusic = em.find(Music.class, id);
 		System.out.println("Before update: " + dbMusic);
 	
-		
 		dbMusic.setTempo(music.getTempo());
 		dbMusic.setStyle(music.getStyle());
+		dbMusic.setSongKey(music.getSongKey());
 		
 		em.flush();
 		System.out.println("After update: " + dbMusic);

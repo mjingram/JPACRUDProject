@@ -9,16 +9,24 @@ body{
 	background-color: #fffff0;
 	color: black;
 	text-align: center;
+	font-family: 'Montserrat', sans-serif;
 }
 
 h1{
+	font-family: 'Pacifico', cursive;
 	font-weight:bold;
 	font-size: 6rem;
+	margin-top: 15px;
+	margin-bottom: 25px;
 }
 
+.saxPic{
+	padding-bottom: 30px;
+}
 h3{
 	font-weight:bold;
 	font-size: 	4rem;
+	margin-bottom: 20px;
 }
 
 h5{
@@ -26,11 +34,89 @@ h5{
 	font-size: 3rem;
 }
 
+.btn{
+	background-color: #000 !important;
+	color: #fffff0 !important;
+	border-color: none !important;
+	}
+	
+.btn-lg{
+	width: 35%;
+}
+
+.btnSEARCH{
+	width: 10%;
+}
+.btn-outline-light:hover{
+	background-color: #fffff0 !important;
+	color: #000 !important;
+}
+
+#songIdInput{
+	width: 10%;
+}
+
 .tableDiv{
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+	margin-bottom: 15px;
 }
 table{
 	width: 100%;
+}
+th, td {
+  font-size: 2rem;
+}
+th{
+text-decoration: underline;
+}
+
+.pageFlipper{
+	width: 100%;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	margin-bottom: 20px;
+}
+button{
+	  border:none;
+   	background-color:transparent;
+   	outline:none;
+}
+i{
+	font-size: 3rem;
+	color: #000;
+}
+
+/* Update Page */
+#tempoInput, #styleInput, #songKeyInput, #titleInput, #transposeKeyInput, #imageURLInput{
+	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%
+}
+.updatePageDiv{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Delete Page */
+.deleteInfoDiv{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 45px;
+}
+.deleteBTN{
+	width: 200%;
+}
+
+/* Create Page */
+
+.updateBTN{
+	margin-top: 20px;
 }

@@ -5,34 +5,45 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Add Song</title>
+<!-- BootStrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!--Google Fonts  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- CSS -->
 <link rel="stylesheet" href="<c:url value="/css/styles.css" />">
+<title>Add Song</title>
 </head>
 <body>
-<h1>Add A new song</h1>
+<h1>Add A New Song</h1>
 
+<div class="createSongDiv">
 <form action="sendCreate.do" method=POST>
 
-<label for="titleInput">Enter New Song Title:</label><br>
-<input id="titleInput" type="text" name="title" placeholder="Title"><br>
-<br>
+<label for="titleInput">Enter New Song Title:</label>
+<input id="titleInput" class="form-control" type="text" name="title" placeholder="Title">
 
-<label for="tempoInput">Enter New Song Tempo:</label><br>
-<input id="tempoInput" type="text" name="tempo" placeholder="Tempo in BPM"><br>
-<br>
-<label for="songKeyInput">Enter New Song Key:</label><br>
-<input id="songKeyInput" type="text" name="songKey"  placeholder="Song Key"><br>
-<br>
-<label for="transposeKeyInput">Which Saxophone Key:</label><br>
-<input id="transposeKeyInput" type="text" name="transposeKey" placeholder="Saxophone Key"><br>
-<br>
-<label for="imageURLInput">Enter URL for Sheet Music Image:</label><br>
-<input id="imageURLInput" type="text" name="imageURL" placeholder="Imgur Direct Image Link"><br>
-<br>
-<label for="styleInput">Enter New Song Style:</label><br>
-<input id="styleInput" type="text" name="style" placeholder="Style"><br>
-<br>
-<input type="submit" value = "Add"><br>
+
+<label for="tempoInput">Enter New Song Tempo:</label>
+<input id="tempoInput" class="form-control" type="number" name="tempo" placeholder="Tempo in BPM">
+
+<label for="songKeyInput">Enter New Song Key:</label>
+<input id="songKeyInput"  class="form-control" type="text" name="songKey"  placeholder="Song Key">
+
+<label for="transposeKeyInput">Which Saxophone Key:</label>
+<input id="transposeKeyInput" class="form-control" type="text" name="transposeKey" placeholder="Saxophone Key">
+
+<label for="imageURLInput">Enter URL for Sheet Music Image:</label>
+<input id="imageURLInput" class="form-control" type="text" name="imageURL" placeholder="Imgur Direct Image Link">
+
+<label for="styleInput">Enter New Song Style:</label>
+<input id="styleInput"  class="form-control" type="text" name="style" placeholder="Style">
+
+<input type="submit" class="btn btn-outline-light btn-lg updateBTN" value = "Add">
 </form>
+</div>
 </body>
 </html>
