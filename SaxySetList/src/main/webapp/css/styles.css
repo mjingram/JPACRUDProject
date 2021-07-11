@@ -1,0 +1,36 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #fffff0;
+	color: black;
+	text-align: center;
+}
+
+h1{
+	font-weight:bold;
+	font-size: 6rem;
+}
+
+h3{
+	font-weight:bold;
+	font-size: 	4rem;
+}
+
+h5{
+	font-weight:bold;
+	font-size: 3rem;
+}
+
+.tableDiv{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+table{
+	width: 100%;
+}
